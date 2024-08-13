@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* my css */
+body {
+  font-size: 1.5rem;
+}
+.container {
+  background-color: skyblue;
+  max-width: 500px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.max-width {
+  width: 100%;
+ 
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.start {
+  justify-content: start;
+}
+.col {
+  flex-direction: column;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+#display , label{
+  margin: 1rem;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+#display {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  border: 0.1rem solid black;
+}
+label {
+  border-bottom: 0.02rem solid rgba(59, 57, 57 , 0.5);
+}
+p {
+  font-size: 2rem;
+}
+input[type ="checkbox"] {
+  background-color: red;
+  padding: 1.5rem;
+}
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: gray;
+  border: none;
+  box-shadow: 0.2rem 0rem 0.4rem  rgba(59, 57, 57 , 0.5);
+  color: rgb(230, 228, 228);
+}
+.active {
+  background-color: rgb(203, 197, 197);
+  color: black;
+  border: 0.2rem solid rgb(92, 92, 92);
+}
