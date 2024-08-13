@@ -20,6 +20,7 @@ screen.addEventListener(`keypress` , (event) => {
     })
     toDoUI(toDo);
     localStorage.setItem(`toDoList` , JSON.stringify(toDo));
+    activeBtn(all_btn);
 
   }   
 })
