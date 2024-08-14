@@ -3,6 +3,7 @@ function main() {
 let rootElement = document.querySelector(`ul`);
 let screen = document.querySelector(`#display`);
 
+
 let toDo = localStorage.toDoList ? JSON.parse(localStorage.getItem(`toDoList`)) : [];
 let completedToDo = [];
 let active_todo = [];
@@ -11,6 +12,7 @@ let active_btn = document.querySelector(`button`);
 let completed_btn = active_btn.nextElementSibling;
 let all_btn = completed_btn.nextElementSibling;
 let clear_btn = all_btn.nextElementSibling;
+toDoUI()
 // Event on entering a name : 
 screen.addEventListener(`keypress` , (event) => {
   if(event.key == `Enter` && event.target.value !== "") {
@@ -20,8 +22,6 @@ screen.addEventListener(`keypress` , (event) => {
     })
     toDoUI(toDo);
     localStorage.setItem(`toDoList` , JSON.stringify(toDo));
-    activeBtn(all_btn);
-
   }   
 })
 
